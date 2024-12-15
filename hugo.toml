@@ -2,3 +2,13 @@ baseURL = 'http://graceana.dev'
 languageCode = 'es-es'
 title = 'Graceana dev'
 theme = 'PaperMod'
+
+[params]
+# Configuración personalizada del tema
+[params.homeInfoParams]
+  Title = "¡Hola, soy Ana Pérez! 👋"
+  Content = "En este espacio comparto mis aprendizajes, como referencia personal y para quienes puedan encontrarles utilidad"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/ana-p%C3%A9rez-816834110/"
