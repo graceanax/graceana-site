@@ -21,11 +21,12 @@ jobs:
           lfs: false
       - name: Install Hugo 
         run: | 
-          wget https://github.com/gohugoio/hugo/releases/download/v0.140.2/hugo_0.140.2_linux-amd64.tar.gz 
-          tar -xzf hugo_0.140.2_linux-amd64.tar.gz 
+          wget https://github.com/gohugoio/hugo/releases/download/v0.140.2/hugo_0.140.2_linux-amd64.tar.gz
+          tar -xzf hugo_0.140.2_linux-amd64.tar.gz
           sudo mv hugo /usr/local/bin/hugo
           sudo chmod +x /usr/local/bin/hugo
-          hugo version
+      - name: Verify Hugo version 
+        run: hugo version
       - name: Build site 
         run: hugo
       - name: Build And Deploy
@@ -35,12 +36,10 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ZEALOUS_FIELD_0B108FD10 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
-          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/" # App source code path
           api_location: "" # Api source code path - optional
           output_location: "public" # Built app content directory - optional
-          ###### End of Repository/Build Configurations ######
+          app_build_command: "hugo" # Ensure Hugo is used as the build command
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
@@ -53,3 +52,4 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ZEALOUS_FIELD_0B108FD10 }}
           action: "close"
+          
