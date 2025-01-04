@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Primera Configuracion Desarrollo Mac | Graceana dev</title>
+<meta name="keywords" content="MacOS, Configuración, Homebrew, GitHub, Git, SSH, Terminal">
+<meta name="description" content="Guía para configurar un entorno de desarrollo básico en Mac.">
+<meta name="author" content="">
+<link rel="canonical" href="https://graceana.dev/posts/primera-configuracion-desarrollo-mac/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://graceana.dev/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://graceana.dev/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://graceana.dev/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://graceana.dev/apple-touch-icon.png">
+<link rel="mask-icon" href="https://graceana.dev/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://graceana.dev/posts/primera-configuracion-desarrollo-mac/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://graceana.dev/posts/primera-configuracion-desarrollo-mac/">
+  <meta property="og:site_name" content="Graceana dev">
+  <meta property="og:title" content="Primera Configuracion Desarrollo Mac">
+  <meta property="og:description" content="Guía para configurar un entorno de desarrollo básico en Mac.">
+  <meta property="og:locale" content="es-es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-01-03T00:10:16-06:00">
+    <meta property="article:modified_time" content="2025-01-03T00:10:16-06:00">
+    <meta property="article:tag" content="MacOS">
+    <meta property="article:tag" content="Configuración">
+    <meta property="article:tag" content="Homebrew">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="Git">
+    <meta property="article:tag" content="SSH">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Primera Configuracion Desarrollo Mac">
+<meta name="twitter:description" content="Guía para configurar un entorno de desarrollo básico en Mac.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://graceana.dev/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Primera Configuracion Desarrollo Mac",
+      "item": "https://graceana.dev/posts/primera-configuracion-desarrollo-mac/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Primera Configuracion Desarrollo Mac",
+  "name": "Primera Configuracion Desarrollo Mac",
+  "description": "Guía para configurar un entorno de desarrollo básico en Mac.",
+  "keywords": [
+    "MacOS", "Configuración", "Homebrew", "GitHub", "Git", "SSH", "Terminal"
+  ],
+  "articleBody": "Configurar un entorno de desarrollo en macOS puede ser sencillo. Uno de los aspectos clave al trabajar en desarrollo es aprender a utilizar la Terminal, una herramienta poderosa para instalar y ejecutar paquetes, programas y mucho más.\nAccede a la Terminal Puedes abrir la Terminal fácilmente desde Spotlight: presiona Command + Barra espaciadora y escribe “Terminal”. Verás algo como esto: El área que ves es el “prompt”, donde podrás introducir comandos. El texto que está antes del cursor muestra tu usuario y el nombre de tu Mac.\nInstalando Homebrew Homebrew es un gestor de paquetes que facilita la instalación de herramientas y programas en macOS. Aquí su sitio oficial.\nPara instalarlo, copia y pega este comando en tu Terminal:\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\" Durante el proceso, también se instalarán las Command Line Tools para Xcode. Al finalizar el proceso, sigue las instrucciones que aparecerán, copia y pega cada uno de los comandos que aparecen en la terminal línea por línea.\nLos comandos inician así:\necho \u003e\u003e .. echo \u003e\u003e .. eval ... Una vez completado, verifica que todo esté correctamente configurado con:\nbrew doctor Si todo está bien, verás el mensaje: “Your system is ready to brew.”\n¿Por qué usar Git? Git es como un “historial de cambios” para tus proyectos y se ha convertido en en estándar en desarrollo. Te permite:\nGuardar versiones: Si algo sale mal, puedes volver a un punto anterior. Trabajar en equipo: Coordina cambios con otras personas sin sobrescribir su trabajo. Publicar tus proyectos: Súbelos a plataformas como GitHub para compartirlos o colaborar. Configurando Git Introduce tu nombre y correo para que tus cambios queden registrados con tus datos:\n💡 Si utilizas Github, te recomiendo utilizar el correo que tienes registrado\ngit config --global user.name \"tu_nombre_de_usuario\" git config --global user.email \"tu_correo@example.com Verifica que todo esté bien configurado:\ngit config --list ¿Por qué conectar Git con GitHub (y qué son las SSH keys)? GitHub es como una nube para desarrolladores. Permite guardar tu código, hacer un historial de cambios, colaborar con otros, mostrar tus proyectos, entre muchas cosas más. Es ideal para trabajar en equipo o para crear un portafolio de tus trabajos.\nSi vas a trabajar con GitHub, configurar una clave SSH hace que conectarte sea más seguro y sin tener que escribir tu contraseña cada vez. Es como tener una llave maestra.\nSSH (Secure Shell) es una forma segura de conectar tu computadora con servicios como GitHub. Usa un sistema de llaves:\nLlave pública: La compartes con GitHub para identificarte. Llave privada: Queda en tu computadora y es como tu firma secreta, no se debe compartir. Esto hace que las conexiones sean más seguras y evita que tengas que escribir tu usuario y contraseña cada vez.\nGenera tu clave SSH:\nssh-keygen -t ed25519 -C \"tu_correo_de_github@example.com\" Presiona Enter para aceptar el nombre por defecto. Opcional: Puedes agregar una contraseña para mayor seguridad. Copia la clave pública:\npbcopy \u003c ~/.ssh/id_ed25519.pub Ve a Configuración de claves SSH en GitHub , agrega una nueva clave SSH y pega la clave copiada.\nTe recomiendo que agregues un título descriptivo, yo suelo colocar el nombre de mi computadora para poder identificar las llaves, ya que por cada computadora que quieras conectar, debes generarlas.\nEn tu terminal, agrega pega el siguiente comando para verificar la conexión:\nssh -T git@github.com ¡Listo! Ahora tu Mac y GitHub están conectados.\nMejoremos el aspecto de nuestra terminal con Oh My Zsh Una terminal atractiva y funcional hace que trabajar sea más cómodo. Para esto usaremos Oh My Zsh, un framework gratuito y de código abierto para mejorar su aspecto.\nCómo instalar Oh My Zsh La instalación es sencilla. Solo ejecuta este comando en tu terminal:\nsh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\" Al instalarlo, notarás que tu terminal tiene un diseño más limpio y atractivo:\nOh My Zsh también tiene una variedad de temas que puedes explorar para personalizar aún más tu terminal, pero eso lo dejamos para otro día.\n",
+  "wordCount" : "654",
+  "inLanguage": "en",
+  "datePublished": "2025-01-03T00:10:16-06:00",
+  "dateModified": "2025-01-03T00:10:16-06:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://graceana.dev/posts/primera-configuracion-desarrollo-mac/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Graceana dev",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://graceana.dev/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://graceana.dev/" accesskey="h" title="Graceana dev (Alt + H)">Graceana dev</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Primera Configuracion Desarrollo Mac
+    </h1>
+    <div class="post-description">
+      Guía para configurar un entorno de desarrollo básico en Mac.
+    </div>
+    <div class="post-meta"><span title='2025-01-03 00:10:16 -0600 CST'>January 3, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Configurar un entorno de desarrollo en macOS puede ser sencillo. Uno de los aspectos clave al trabajar en desarrollo es aprender a utilizar la Terminal, una herramienta poderosa para instalar y ejecutar paquetes, programas y mucho más.</p>
+<h3 id="accede-a-la-terminal">Accede a la Terminal<a hidden class="anchor" aria-hidden="true" href="#accede-a-la-terminal">#</a></h3>
+<p>Puedes abrir la Terminal fácilmente desde Spotlight: presiona <code>Command + Barra espaciadora</code> y escribe &ldquo;Terminal&rdquo;. Verás algo como esto:
+<img alt="Terminal 1" loading="lazy" src="/images/primera-conf-mac-os/primera-conf-mac-os-1.png"></p>
+<p>El área que ves es el &ldquo;prompt&rdquo;, donde podrás introducir comandos. El texto que está antes del cursor muestra tu usuario y el nombre de tu Mac.</p>
+<h3 id="instalando-homebrew">Instalando Homebrew<a hidden class="anchor" aria-hidden="true" href="#instalando-homebrew">#</a></h3>
+<p>Homebrew es un gestor de paquetes que facilita la instalación de herramientas y programas en macOS. Aquí <a href="https://brew.sh/es/">su sitio oficial</a>.</p>
+<p>Para instalarlo, copia y pega este comando en tu Terminal:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">/bin/bash -c <span class="s2">&#34;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&#34;</span>
+</span></span></code></pre></div><p>Durante el proceso, también se instalarán las Command Line Tools para Xcode. Al finalizar el proceso, sigue las instrucciones que aparecerán, copia y pega cada uno de los comandos que aparecen en la terminal línea por línea.</p>
+<p>Los comandos inician así:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> &gt;&gt; ..
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> &gt;&gt; ..
+</span></span><span class="line"><span class="cl"><span class="nb">eval</span> ...
+</span></span></code></pre></div><p><img alt="Terminal 2" loading="lazy" src="/images/primera-conf-mac-os/primera-conf-mac-os-2.png"></p>
+<p>Una vez completado, verifica que todo esté correctamente configurado con:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">brew doctor
+</span></span></code></pre></div><p>Si todo está bien, verás el mensaje: <em>&ldquo;Your system is ready to brew.&rdquo;</em></p>
+<h3 id="por-qué-usar-git">¿Por qué usar Git?<a hidden class="anchor" aria-hidden="true" href="#por-qué-usar-git">#</a></h3>
+<p>Git es como un &ldquo;historial de cambios&rdquo; para tus proyectos y se ha convertido en en estándar en desarrollo. Te permite:</p>
+<ul>
+<li><strong>Guardar versiones:</strong> Si algo sale mal, puedes volver a un punto anterior.</li>
+<li><strong>Trabajar en equipo:</strong> Coordina cambios con otras personas sin sobrescribir su trabajo.</li>
+<li><strong>Publicar tus proyectos:</strong> Súbelos a plataformas como GitHub para compartirlos o colaborar.</li>
+</ul>
+<h3 id="configurando-git">Configurando Git<a hidden class="anchor" aria-hidden="true" href="#configurando-git">#</a></h3>
+<ol>
+<li>
+<p>Introduce tu nombre y correo para que tus cambios queden registrados con tus datos:</p>
+<blockquote>
+<p>💡 Si utilizas Github, te recomiendo utilizar el correo que tienes registrado</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git config --global user.name <span class="s2">&#34;tu_nombre_de_usuario&#34;</span>
+</span></span><span class="line"><span class="cl">git config --global user.email <span class="s2">&#34;tu_correo@example.com
+</span></span></span></code></pre></div></li>
+<li>
+<p>Verifica que todo esté bien configurado:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git config --list
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="por-qué-conectar-git-con-github-y-qué-son-las-ssh-keys">¿Por qué conectar Git con GitHub (y qué son las SSH keys)?<a hidden class="anchor" aria-hidden="true" href="#por-qué-conectar-git-con-github-y-qué-son-las-ssh-keys">#</a></h3>
+<p>GitHub es como una nube para desarrolladores. Permite guardar tu código, hacer un historial de cambios, colaborar con otros, mostrar tus proyectos, entre muchas cosas más. Es ideal para trabajar en equipo o para crear un portafolio de tus trabajos.</p>
+<p>Si vas a trabajar con GitHub, configurar una clave SSH hace que conectarte sea más seguro y sin tener que escribir tu contraseña cada vez. Es como tener una llave maestra.</p>
+<p>SSH (Secure Shell) es una forma segura de conectar tu computadora con servicios como GitHub. Usa un sistema de llaves:</p>
+<ul>
+<li><strong>Llave pública:</strong> La compartes con GitHub para identificarte.</li>
+<li><strong>Llave privada:</strong> Queda en tu computadora y es como tu firma secreta, no se debe compartir.</li>
+</ul>
+<p>Esto hace que las conexiones sean más seguras y evita que tengas que escribir tu usuario y contraseña cada vez.</p>
+<ol>
+<li>
+<p>Genera tu clave SSH:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -t ed25519 -C <span class="s2">&#34;tu_correo_de_github@example.com&#34;</span>
+</span></span></code></pre></div><ul>
+<li>Presiona Enter para aceptar el nombre por defecto.</li>
+<li>Opcional: Puedes agregar una contraseña para mayor seguridad.</li>
+</ul>
+</li>
+<li>
+<p>Copia la clave pública:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pbcopy &lt; ~/.ssh/id_ed25519.pub
+</span></span></code></pre></div></li>
+<li>
+<p>Ve a <a href="https://github.com/settings/keys">Configuración de claves SSH en GitHub</a> , agrega una nueva clave SSH y pega la clave copiada.</p>
+<p><img alt="Nueva llave SSH en GitHub" loading="lazy" src="/images/primera-conf-mac-os/primera-conf-mac-os-3.png"></p>
+<p>Te recomiendo que agregues un título descriptivo, yo suelo colocar el nombre de mi computadora para poder identificar las llaves, ya que por cada computadora que quieras conectar, debes generarlas.</p>
+<p><img alt="Nueva llave SSH en GitHub 2" loading="lazy" src="/images/primera-conf-mac-os/primera-conf-mac-os-4.png"></p>
+</li>
+<li>
+<p>En tu terminal, agrega pega el siguiente comando para verificar la conexión:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh -T git@github.com
+</span></span></code></pre></div><p><img alt="Terminal 3" loading="lazy" src="/images/primera-conf-mac-os/primera-conf-mac-os-5.png"></p>
+</li>
+</ol>
+<p>¡Listo! Ahora tu Mac y GitHub están conectados.</p>
+<h3 id="mejoremos-el-aspecto-de-nuestra-terminal-con-oh-my-zsh">Mejoremos el aspecto de nuestra terminal con Oh My Zsh<a hidden class="anchor" aria-hidden="true" href="#mejoremos-el-aspecto-de-nuestra-terminal-con-oh-my-zsh">#</a></h3>
+<p>Una terminal atractiva y funcional hace que trabajar sea más cómodo. Para esto usaremos <strong>Oh My Zsh</strong>, un framework gratuito y de código abierto para mejorar su aspecto.</p>
+<h3 id="cómo-instalar-oh-my-zsh">Cómo instalar Oh My Zsh<a hidden class="anchor" aria-hidden="true" href="#cómo-instalar-oh-my-zsh">#</a></h3>
+<p>La instalación es sencilla. Solo ejecuta este comando en tu terminal:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sh -c <span class="s2">&#34;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span class="k">)</span><span class="s2">&#34;</span>
+</span></span></code></pre></div><p>Al instalarlo, notarás que tu terminal tiene un diseño más limpio y atractivo:</p>
+<p><img alt="Terminal 4" loading="lazy" src="/images/primera-conf-mac-os/primera-conf-mac-os-6.png"></p>
+<p>Oh My Zsh también tiene una variedad de temas que puedes explorar para personalizar aún más tu terminal, pero eso lo dejamos para otro día.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://graceana.dev/tags/macos/">MacOS</a></li>
+      <li><a href="https://graceana.dev/tags/configuraci%C3%B3n/">Configuración</a></li>
+      <li><a href="https://graceana.dev/tags/homebrew/">Homebrew</a></li>
+      <li><a href="https://graceana.dev/tags/github/">GitHub</a></li>
+      <li><a href="https://graceana.dev/tags/git/">Git</a></li>
+      <li><a href="https://graceana.dev/tags/ssh/">SSH</a></li>
+      <li><a href="https://graceana.dev/tags/terminal/">Terminal</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://graceana.dev/">Graceana dev</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

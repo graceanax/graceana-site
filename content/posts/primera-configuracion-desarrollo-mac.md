@@ -2,6 +2,9 @@
 date = '2025-01-03T00:10:16-06:00'
 draft = false
 title = 'Primera Configuracion Desarrollo Mac'
+categories = ["MacOS", "Desarrollo de Software", "Configuración de entornos", "Herramientas"]
+tags = ["MacOS", "Configuración", "Homebrew", "GitHub", "Git", "SSH", "Terminal"]
+description = "Guía para configurar un entorno de desarrollo básico en Mac."
 +++
 
 Configurar un entorno de desarrollo en macOS puede ser sencillo. Uno de los aspectos clave al trabajar en desarrollo es aprender a utilizar la Terminal, una herramienta poderosa para instalar y ejecutar paquetes, programas y mucho más.
@@ -9,7 +12,7 @@ Configurar un entorno de desarrollo en macOS puede ser sencillo. Uno de los aspe
 ### Accede a la Terminal
 
 Puedes abrir la Terminal fácilmente desde Spotlight: presiona `Command + Barra espaciadora` y escribe "Terminal". Verás algo como esto:
-(imagen 1)
+![Terminal 1](/images/primera-conf-mac-os/primera-conf-mac-os-1.png)
 
 El área que ves es el "prompt", donde podrás introducir comandos. El texto que está antes del cursor muestra tu usuario y el nombre de tu Mac.
 
@@ -34,7 +37,7 @@ echo >> ..
 eval ...
 ```
 
-(imagen 2)
+![Terminal 2](/images/primera-conf-mac-os/primera-conf-mac-os-2.png)
 
 Una vez completado, verifica que todo esté correctamente configurado con:
 
@@ -99,11 +102,11 @@ Esto hace que las conexiones sean más seguras y evita que tengas que escribir t
     
 3. Ve a [Configuración de claves SSH en GitHub](https://github.com/settings/keys) , agrega una nueva clave SSH y pega la clave copiada.
     
-    (imagen 3)
+    ![Nueva llave SSH en GitHub](/images/primera-conf-mac-os/primera-conf-mac-os-3.png)
     
     Te recomiendo que agregues un título descriptivo, yo suelo colocar el nombre de mi computadora para poder identificar las llaves, ya que por cada computadora que quieras conectar, debes generarlas.
     
-    (imagen 4)
+    ![Nueva llave SSH en GitHub 2](/images/primera-conf-mac-os/primera-conf-mac-os-4.png)
     
 4. En tu terminal, agrega pega el siguiente comando para verificar la conexión:
     
@@ -111,7 +114,7 @@ Esto hace que las conexiones sean más seguras y evita que tengas que escribir t
     ssh -T git@github.com
     ```
     
-    (imagen 5)
+    ![Terminal 3](/images/primera-conf-mac-os/primera-conf-mac-os-5.png)
     
 
 ¡Listo! Ahora tu Mac y GitHub están conectados.
@@ -130,6 +133,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 Al instalarlo, notarás que tu terminal tiene un diseño más limpio y atractivo:
 
-(imagen 6)
+![Terminal 4](/images/primera-conf-mac-os/primera-conf-mac-os-6.png)
 
 Oh My Zsh también tiene una variedad de temas que puedes explorar para personalizar aún más tu terminal, pero eso lo dejamos para otro día.
