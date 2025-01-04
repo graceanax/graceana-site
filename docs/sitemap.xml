@@ -2,17 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://graceana.dev/docs/</loc>
+    <loc>https://graceana.dev/categories/</loc>
+    <lastmod>2025-01-03T00:10:16-06:00</lastmod>
+  </url><url>
+    <loc>https://graceana.dev/tags/configuraci%C3%B3n/</loc>
+    <lastmod>2025-01-03T00:10:16-06:00</lastmod>
+  </url><url>
+    <loc>https://graceana.dev/categories/configuraci%C3%B3n-de-entornos/</loc>
+    <lastmod>2025-01-03T00:10:16-06:00</lastmod>
+  </url><url>
+    <loc>https://graceana.dev/categories/desarrollo-de-software/</loc>
+    <lastmod>2025-01-03T00:10:16-06:00</lastmod>
+  </url><url>
+    <loc>https://graceana.dev/tags/git/</loc>
+    <lastmod>2025-01-03T00:10:16-06:00</lastmod>
+  </url><url>
+    <loc>https://graceana.dev/tags/github/</loc>
+    <lastmod>2025-01-03T00:10:16-06:00</lastmod>
+  </url><url>
+    <loc>https://graceana.dev/</loc>
+    <lastmod>2025-01-03T00:10:16-06:00</lastmod>
+  </url><url>
+    <loc>https://graceana.dev/categories/herramientas/</loc>
+    <lastmod>2025-01-03T00:10:16-06:00</lastmod>
+  </url><url>
+    <loc>https://graceana.dev/tags/homebrew/</loc>
+    <lastmod>2025-01-03T00:10:16-06:00</lastmod>
+  </url><url>
+    <loc>https://graceana.dev/tags/macos/</loc>
+    <lastmod>2025-01-03T00:10:16-06:00</lastmod>
+  </url><url>
+    <loc>https://graceana.dev/categories/macos/</loc>
+    <lastmod>2025-01-03T00:10:16-06:00</lastmod>
+  </url><url>
+    <loc>https://graceana.dev/posts/</loc>
+    <lastmod>2025-01-03T00:10:16-06:00</lastmod>
+  </url><url>
+    <loc>https://graceana.dev/posts/primera-configuracion-desarrollo-mac/</loc>
+    <lastmod>2025-01-03T00:10:16-06:00</lastmod>
+  </url><url>
+    <loc>https://graceana.dev/tags/ssh/</loc>
+    <lastmod>2025-01-03T00:10:16-06:00</lastmod>
+  </url><url>
+    <loc>https://graceana.dev/tags/</loc>
+    <lastmod>2025-01-03T00:10:16-06:00</lastmod>
+  </url><url>
+    <loc>https://graceana.dev/tags/terminal/</loc>
+    <lastmod>2025-01-03T00:10:16-06:00</lastmod>
+  </url><url>
+    <loc>https://graceana.dev/docs/</loc>
     <lastmod>2024-12-14T18:51:09-06:00</lastmod>
   </url><url>
-    <loc>http://graceana.dev/</loc>
+    <loc>https://graceana.dev/docs/test/</loc>
     <lastmod>2024-12-14T18:51:09-06:00</lastmod>
-  </url><url>
-    <loc>http://graceana.dev/docs/test/</loc>
-    <lastmod>2024-12-14T18:51:09-06:00</lastmod>
-  </url><url>
-    <loc>http://graceana.dev/categories/</loc>
-  </url><url>
-    <loc>http://graceana.dev/tags/</loc>
   </url>
 </urlset>

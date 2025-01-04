@@ -1,7 +1,10 @@
-baseURL = 'http://graceana.dev'
+# baseURL = 'http://localhost:1313/'
+baseURL = 'https://graceana.dev/'
 languageCode = 'es-es'
 title = 'Graceana dev'
 theme = 'PaperMod'
+
+publishDir = "docs"
 
 [params]
 # Configuración personalizada del tema
@@ -12,3 +15,14 @@ theme = 'PaperMod'
 [[params.socialIcons]]
   name = "linkedin"
   url = "https://www.linkedin.com/in/ana-p%C3%A9rez-816834110/"
+
+[markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  lineNos = false
+  noClasses = false
+  style = "monokai"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
