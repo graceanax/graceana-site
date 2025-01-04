@@ -2,10 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Graceana dev</title>
-    <link>http://graceana.dev/categories/</link>
+    <link>https://graceana.dev/categories/</link>
     <description>Recent content in Categories on Graceana dev</description>
-    <generator>Hugo -- 0.139.4</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>es-es</language>
-    <atom:link href="http://graceana.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Jan 2025 00:10:16 -0600</lastBuildDate>
+    <atom:link href="https://graceana.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuración De Entornos</title>
+      <link>https://graceana.dev/categories/configuraci%C3%B3n-de-entornos/</link>
+      <pubDate>Fri, 03 Jan 2025 00:10:16 -0600</pubDate>
+      <guid>https://graceana.dev/categories/configuraci%C3%B3n-de-entornos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Desarrollo De Software</title>
+      <link>https://graceana.dev/categories/desarrollo-de-software/</link>
+      <pubDate>Fri, 03 Jan 2025 00:10:16 -0600</pubDate>
+      <guid>https://graceana.dev/categories/desarrollo-de-software/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Herramientas</title>
+      <link>https://graceana.dev/categories/herramientas/</link>
+      <pubDate>Fri, 03 Jan 2025 00:10:16 -0600</pubDate>
+      <guid>https://graceana.dev/categories/herramientas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MacOS</title>
+      <link>https://graceana.dev/categories/macos/</link>
+      <pubDate>Fri, 03 Jan 2025 00:10:16 -0600</pubDate>
+      <guid>https://graceana.dev/categories/macos/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
