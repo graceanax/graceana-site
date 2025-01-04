@@ -24,8 +24,8 @@ jobs:
           wget https://github.com/gohugoio/hugo/releases/download/v0.140.2/hugo_0.140.2_linux-amd64.tar.gz 
           tar -xzf hugo_0.140.2_linux-amd64.tar.gz 
           sudo mv hugo /usr/local/bin/hugo
-      - name: Verify Hugo version 
-        run: hugo version
+          sudo chmod +x /usr/local/bin/hugo
+          hugo version
       - name: Build site 
         run: hugo
       - name: Build And Deploy
