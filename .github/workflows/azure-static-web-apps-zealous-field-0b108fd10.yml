@@ -19,7 +19,7 @@ jobs:
         with:
           submodules: true
           lfs: false
-      - name: Install Hugo
+      - name: Install Hugo v0.140.2
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v0.140.2/hugo_0.140.2_Linux-64bit.tar.gz
           tar -xvzf hugo_0.140.2_Linux-64bit.tar.gz
