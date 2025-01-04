@@ -4,6 +4,8 @@ languageCode = 'es-es'
 title = 'Graceana dev'
 theme = 'PaperMod'
 
+contentDir = "content"
+
 [params]
 # Configuración personalizada del tema
 [params.homeInfoParams]
