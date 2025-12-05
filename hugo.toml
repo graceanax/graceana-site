@@ -1,13 +1,13 @@
-# baseURL = 'http://localhost:1313/'
 baseURL = 'https://graceana.dev/'
 languageCode = 'es-es'
 title = 'Graceana dev'
 theme = 'PaperMod'
-
 contentDir = "content"
 
 [params]
-# Configuración personalizada del tema
+  math = true  # Activador global de matemáticas
+  enableKatex = true
+
 [params.homeInfoParams]
   Title = "¡Hola, soy Ana Pérez! 👋"
   Content = "En este espacio comparto mis aprendizajes, como referencia personal y para quienes puedan encontrarles utilidad"
@@ -16,12 +16,23 @@ contentDir = "content"
   name = "linkedin"
   url = "https://www.linkedin.com/in/ana-p%C3%A9rez-816834110/"
 
-[markup.highlight]
-  codeFences = true
-  guessSyntax = true
-  lineNos = false
-  noClasses = false
-  style = "monokai"
+# --- CONFIGURACIÓN DE FORMATO (Aquí estaba el truco) ---
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "monokai"
+
+  # Esto permite que el signo $ pase sin romperse
+  [markup.goldmark.renderer]
+    unsafe = true
+
+  [markup.goldmark.extensions.passthrough]
+    enable = true
+    [markup.goldmark.extensions.passthrough.delimiters]
+      block = [['$$', '$$'], ['\\[', '\\]']]
+      inline = [['$', '$'], ['\\(', '\\)']]
 
 [taxonomies]
   category = "categories"
