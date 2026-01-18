@@ -1,5 +1,4 @@
 +++
-date = '2025-12-04T23:55:00-06:00'
 draft = false
 title = 'Criterios de Divisibilidad'
 categories = ['Matemática', 'Notebook']

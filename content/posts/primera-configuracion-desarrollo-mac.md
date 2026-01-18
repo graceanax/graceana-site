@@ -1,5 +1,4 @@
 +++
-date = '2025-01-03T00:10:16-06:00'
 draft = false
 title = 'Primera Configuracion Desarrollo Mac'
 categories = ["MacOS", "Desarrollo de Software", "Configuración de entornos", "Herramientas"]
