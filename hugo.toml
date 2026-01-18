@@ -1,6 +1,6 @@
 baseURL = 'https://graceana.com/'
 languageCode = 'es-es'
-title = 'Graceana dev'
+title = 'Graceana'
 theme = 'PaperMod'
 contentDir = "content"
 
