@@ -10,7 +10,7 @@ contentDir = "content"
 
 [params.homeInfoParams]
   Title = "¡Hola, soy Ana Pérez! 👋"
-  Content = "En este espacio comparto mis aprendizajes, como referencia personal y para quienes puedan encontrarles utilidad"
+  Content = "--"
 
 [[params.socialIcons]]
   name = "linkedin"
